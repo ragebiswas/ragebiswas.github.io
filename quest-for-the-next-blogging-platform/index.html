@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    
+    <title>Quest for the next blogging platform</title>
+    <meta name="description" content="" />
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="../favicon.ico">
+
+    
+    <link rel="stylesheet" type="text/css" href="../assets/css/screen.css?v=a4aafbb5c8" />
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Noto+Serif:400,700,400italic|Open+Sans:700,400" />
+
+    
+    <meta name="generator" content="Ghost 0.4" />
+<link rel="alternate" type="application/rss+xml" title="Bits and Bytes" href="../rss/index.html">
+<link rel="canonical" href="http://rajorshi.net/quest-for-the-next-blogging-platform/" />
+</head>
+<body class="post-template">
+
+    
+    
+
+
+
+<main class="content" role="main">
+
+    <article class="post">
+
+        
+        <header class="post-header">
+            <a class="blog-logo" href="http://rajorshi.net">
+                
+                    <span class="blog-title">Bits and Bytes</span>
+                
+            </a>
+        </header>
+
+        
+        
+
+            <span class="post-meta"><time datetime="2014-05-12">12 May 2014</time> </span>
+
+            <h1 class="post-title">Quest for the next blogging platform</h1>
+
+            <section class="post-content">
+                <p>Let's face it - <a href="http://wordpress.com" target="_blank">Wordpress</a> is passe.</p>
+
+<p>Though immensely popular, Wordpress has been criticized of late for being too "large" and complex for the requirements of a simple blog. Indeed, it is advertized as a CMS and a publishing platform and is capable of doing way more than you'd like, or <em>want </em>your blogging platform to do. However, the reason for its popularity is its ease of use nevertheless. It's pretty straightforward for the average Joe to use a hosted Wordpress solution and publish a blog, complete with excellent themes and comments, without paying a dime (if you host it on wordpress.com for instance). There are several reasons why I don't quite like it - although I don't exactly <em>hate</em> it either:  </p>
+
+<ul>  
+    <li>Quite heavy on resources, see the image below</li>
+    <li>The default comments system - though simple and good, is sometimes very spam prone (oddly, I faced this even with the presence of Akismet)</li>
+    <li>The backend is a <a href="http://en.wikipedia.org/wiki/LAMP_(software_bundle)">LAMP</a> setup, and I find a relational database an overkill for a simple blog (that should ideally be a set of static files)</li>
+    <li>Very easily hacked! This is a serious problem with lesser capable Wordpress hosting providers.</li>
+</ul>
+
+<p><img src="http://res.cloudinary.com/rajorshi/image/upload/v1402145852/wp_speed_stljeb.jpg" alt="Wordpress Speed" /></p>
+
+<p>The current setup I'm using (hosting and domain provided by Godaddy) works, but is turning out to be <em>quite expensive. </em>I didn't realize that most coupons are <strong>not </strong>applicable to the <strong>renewals </strong>of Godaddy - and the very basic Linux hosting renewal package costs a bomb (INR 5300, ~ USD 100)! All I need is hosting for a simple blog.</p>
+
+<p><strong>Enter GitHub + Octopress</strong></p>
+
+<p>Let's face it - <a href="https://github.com/">GitHub</a> rocks! I'm a huge fan of the entire GitHub ecosystem - and they've really taken the open-source world by storm. They have a neat product called <a href="https://pages.github.com/">GitHub Pages</a> which offers free websites "for you and your projects". Although GitHub pages are static only (meaning you cannot run Wordpress on top of it), it features native support for the <a href="http://jekyllrb.com/">Jekyll</a> <a href="http://staticsitegenerators.net/">static site generator</a>. Hence, it supports the Jekyll based <a href="http://octopress.org/">Octopress</a> blogging system natively as well.</p>
+
+<p>So one weekend, I set up a "Hello World" blog on Octopress. <em>Phew! </em>That was quite a challenge. Octopress is serious when it claims it's a "blogging framework for hackers". In the end, here's the performance of my simple blog (hosted <a href="http://ragebiswas.github.io">here</a>):</p>
+
+<p><img src="http://res.cloudinary.com/rajorshi/image/upload/v1402145850/github_speed_xulelr.jpg" alt="GitHub speed" /></p>
+
+<p>Note: the above performance would degrade in a real life situation, with images and so on - however would surely be faster than Wordpress. Having gone through the setup (which should be another blog post in its entirety), here are some pros and cons of this approach:</p>
+
+<p>Pros  </p>
+
+<ul>  
+    <li>Generates a static site - hence is <em>fast</em></li>
+    <li>I love Markdown - very semantic in nature, and perfect for programming blogs</li>
+    <li>Everything is <strong>git</strong> version controlled - which seems nice!</li>
+    <li>Pre-built integration for the stuff I need - <a href="http://www.disqus.com/">Disqus</a> comments, Facebook login, GitHub repo links and so on.</li>
+</ul>  
+
+<p>Cons  </p>
+
+<ul>  
+    <li> No web interface for posting - decidedly inconvenient</li>
+    <li><em>Very complicated</em> setup for the Ruby unaware (me!). I've never been into the Ruby ecosystem and the tools (rake, bundle, gem, rvm, ...) are, frankly, a bit overwhelming for a newbie</li>
+    <li>Even creating a new post needs about 5 commands</li>
+    <li>Though git is nice, I find the Octopress structure on git a bit weird (<strong>main</strong> containing the website, and <strong>source </strong>branch containing the Octopress code)</li>
+    <li>Themes are a bit weak, especially compared to Wordpress</li>
+</ul>  
+
+<p>That's it for now. Octopress seems a promising alternative, but I want to study two additional platforms before migrating <strong>rajorshi.net</strong>:  </p>
+
+<ol>  
+    <li>The new kid on the blog (sic): <a href="https://ghost.org/">Ghost</a>. An additional tool (<a href="http://blog.axitkhurana.com/introducing-buster/">buster</a>) is required to generate a static site that GitHub pages mandates</li>
+    <li>My own simple static site, generated using <a href="http://docs.getpelican.com/en/3.3.0/">Pelican</a> or something else.</li>
+</ol>  
+
+<p>Stay tuned for more updates ;-)</p>
+            </section>
+
+            <footer class="post-footer">
+
+                <section class="author">
+                    <h4>Rajorshi Biswas</h4>
+                    <p></p>
+                    <ul class="author-meta clearfix">
+                        <li>Hyderabad</li>
+                        
+                    </ul>
+                </section>
+
+                <section class="share">
+                    <h4>Share this post</h4>
+                    <a class="icon-twitter" href="https://twitter.com/share?text=Quest%20for%20the%20next%20blogging%20platform&amp;url=http://rajorshi.net/quest-for-the-next-blogging-platform/"
+                        onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                        <span class="hidden">Twitter</span>
+                    </a>
+                    <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://rajorshi.net/quest-for-the-next-blogging-platform/"
+                        onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                        <span class="hidden">Facebook</span>
+                    </a>
+                    <a class="icon-google-plus" href="https://plus.google.com/share?url=http://rajorshi.net/quest-for-the-next-blogging-platform/"
+                       onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+                        <span class="hidden">Google+</span>
+                    </a>
+                </section>
+
+            </footer>
+
+        
+        
+        <div id="disqus_thread"></div>
+	<script type="text/javascript">
+	var disqus_shortname = 'rajorshi'; // required: replace example with your forum shortname
+	var disqus_identifier = '4'; // make sure to use the post.id as an identifier, otherwise disqus will use the pages url per default, which might be problematic...
+	 
+	/* * * DON'T EDIT BELOW THIS LINE * * */
+	(function() {
+	var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+	dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+	(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	})();
+	</script>
+	<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+	<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+    </article>
+
+</main>
+
+
+    <footer class="site-footer">
+        <a class="subscribe icon-feed" href="http://rajorshi.net/rss/"><span class="tooltip">Subscribe!</span></a>
+        <div class="inner">
+             <section class="copyright">All content copyright <a href="http://rajorshi.net/">Bits and Bytes</a> &copy; 2014 &bull; All rights reserved.</section>
+             <section class="poweredby">Proudly published with <a class="icon-ghost" href="https://ghost.org">Ghost</a></section>
+        </div>
+    </footer>
+
+    
+    <script src="../public/jquery.js?v=a4aafbb5c8"></script>
+
+    
+    <script type="text/javascript" src="../assets/js/jquery.fitvids.js?v=a4aafbb5c8"></script>
+    <script type="text/javascript" src="../assets/js/index.js?v=a4aafbb5c8"></script>
+
+</body>
+</html>

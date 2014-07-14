@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Bits and Bytes]]></title><description><![CDATA[Rajorshi's Blog]]></description><link>http://rajorshi.net/</link><generator>Ghost v0.4.2</generator><lastBuildDate>Mon, 14 Jul 2014 03:16:23 GMT</lastBuildDate><atom:link href="http://rajorshi.net/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Quest for the next blogging platform]]></title><description><![CDATA[<p>Let's face it - <a href='http://wordpress.com/'  target="_blank">Wordpress</a> is passe.</p>
+
+<p>Though immensely popular, Wordpress has been criticized of late for being too "large" and complex for the requirements of a simple blog. Indeed, it is advertized as a CMS and a publishing platform and is capable of doing way more than you'd like, or <em>want </em>your blogging platform to do. However, the reason for its popularity is its ease of use nevertheless. It's pretty straightforward for the average Joe to use a hosted Wordpress solution and publish a blog, complete with excellent themes and comments, without paying a dime (if you host it on wordpress.com for instance). There are several reasons why I don't quite like it - although I don't exactly <em>hate</em> it either:  </p>
+
+<ul>  
+    <li>Quite heavy on resources, see the image below</li>
+    <li>The default comments system - though simple and good, is sometimes very spam prone (oddly, I faced this even with the presence of Akismet)</li>
+    <li>The backend is a <a href='http://en.wikipedia.org/wiki/LAMP_' (software_bundle)">LAMP</a> setup, and I find a relational database an overkill for a simple blog (that should ideally be a set of static files)</li>
+    <li>Very easily hacked! This is a serious problem with lesser capable Wordpress hosting providers.</li>
+</ul>
+
+<p><img src='http://res.cloudinary.com/rajorshi/image/upload/v1402145852/wp_speed_stljeb.jpg'  alt="Wordpress Speed" /></p>
+
+<p>The current setup I'm using (hosting and domain provided by Godaddy) works, but is turning out to be <em>quite expensive. </em>I didn't realize that most coupons are <strong>not </strong>applicable to the <strong>renewals </strong>of Godaddy - and the very basic Linux hosting renewal package costs a bomb (INR 5300, ~ USD 100)! All I need is hosting for a simple blog.</p>
+
+<p><strong>Enter GitHub + Octopress</strong></p>
+
+<p>Let's face it - <a href='https://github.com/' >GitHub</a> rocks! I'm a huge fan of the entire GitHub ecosystem - and they've really taken the open-source world by storm. They have a neat product called <a href='https://pages.github.com/' >GitHub Pages</a> which offers free websites "for you and your projects". Although GitHub pages are static only (meaning you cannot run Wordpress on top of it), it features native support for the <a href='http://jekyllrb.com/' >Jekyll</a> <a href='http://staticsitegenerators.net/' >static site generator</a>. Hence, it supports the Jekyll based <a href='http://octopress.org/' >Octopress</a> blogging system natively as well.</p>
+
+<p>So one weekend, I set up a "Hello World" blog on Octopress. <em>Phew! </em>That was quite a challenge. Octopress is serious when it claims it's a "blogging framework for hackers". In the end, here's the performance of my simple blog (hosted <a href='http://ragebiswas.github.io/' >here</a>):</p>
+
+<p><img src='http://res.cloudinary.com/rajorshi/image/upload/v1402145850/github_speed_xulelr.jpg'  alt="GitHub speed" /></p>
+
+<p>Note: the above performance would degrade in a real life situation, with images and so on - however would surely be faster than Wordpress. Having gone through the setup (which should be another blog post in its entirety), here are some pros and cons of this approach:</p>
+
+<p>Pros  </p>
+
+<ul>  
+    <li>Generates a static site - hence is <em>fast</em></li>
+    <li>I love Markdown - very semantic in nature, and perfect for programming blogs</li>
+    <li>Everything is <strong>git</strong> version controlled - which seems nice!</li>
+    <li>Pre-built integration for the stuff I need - <a href='http://www.disqus.com/' >Disqus</a> comments, Facebook login, GitHub repo links and so on.</li>
+</ul>  
+
+<p>Cons  </p>
+
+<ul>  
+    <li> No web interface for posting - decidedly inconvenient</li>
+    <li><em>Very complicated</em> setup for the Ruby unaware (me!). I've never been into the Ruby ecosystem and the tools (rake, bundle, gem, rvm, ...) are, frankly, a bit overwhelming for a newbie</li>
+    <li>Even creating a new post needs about 5 commands</li>
+    <li>Though git is nice, I find the Octopress structure on git a bit weird (<strong>main</strong> containing the website, and <strong>source </strong>branch containing the Octopress code)</li>
+    <li>Themes are a bit weak, especially compared to Wordpress</li>
+</ul>  
+
+<p>That's it for now. Octopress seems a promising alternative, but I want to study two additional platforms before migrating <strong>rajorshi.net</strong>:  </p>
+
+<ol>  
+    <li>The new kid on the blog (sic): <a href='https://ghost.org/' >Ghost</a>. An additional tool (<a href='http://blog.axitkhurana.com/introducing-buster/' >buster</a>) is required to generate a static site that GitHub pages mandates</li>
+    <li>My own simple static site, generated using <a href='http://docs.getpelican.com/en/3.3.0/' >Pelican</a> or something else.</li>
+</ol>  
+
+<p>Stay tuned for more updates ;-)</p>]]></description><link>http://rajorshi.net/quest-for-the-next-blogging-platform/</link><guid isPermaLink="false">ed5bf902-09a9-498e-8d93-d13e27d5d94a</guid><dc:creator><![CDATA[Rajorshi Biswas]]></dc:creator><pubDate>Mon, 12 May 2014 18:22:16 GMT</pubDate></item><item><title><![CDATA[Transcend 128GB SSD: Laptop Upgrade]]></title><description><![CDATA[<p>After debating for a while on whether to go for a new Haswell laptop,  I dropped the idea completely and decided to upgrade my existing Core i3-2310M based <a href='http://www.amazon.com/Toshiba-Satellite-C655-S5206-Laptop-Black/dp/B005ZLRVT2' >Toshiba C655</a> laptop with the cheapest available <a href='http://en.wikipedia.org/wiki/Solid-state_drive' >SSD</a>! This post details how to upgrade performance at a very less price of your existing laptop/desktop - especially if you already have a system with a decent processor under the hood (for example - the Intel Core i3/i5/i7 processor - 1st generation or later).</p>
+
+<p>As part of this, I'll also show how to use your old hard disk as a portable one, instead of throwing it away.</p>
+
+<p><strong>Step 1: Rationale and acquisition</strong></p>
+
+<p>To start off, my laptop came with a standard 5400RPM Toshiba HDD, the CrystalDiskMark stats of which are:</p>
+
+<p><img src='http://res.cloudinary.com/rajorshi/image/upload/v1402145861/hdd-performance_wtsboo.jpg'  alt="HDD Performance" /></p>
+
+<p>.. obviously pretty abysmal speeds.</p>
+
+<p>Since my laptop is already pretty old (3+ years), I did not go for the highly rated <strong>Samsung 840 EVO</strong> <strong>SSD</strong> series. I instead opted for the (cheapest as of now) <strong><a href='http://www.transcend-info.com/products/CatList.asp?FldNo=21&amp;Func2No=23' >Transcend 128GB SSD340</a></strong>, at a pretty good deal of around INR 4000 - around $66 (including cashbacks from <a href='http://www.snapdeal.com/product/transcend-ts128gssd340-128-gb-solid/1471747364' >Snapdeal</a>).  Here's the retail box it arrived in:</p>
+
+<p><img src='http://res.cloudinary.com/rajorshi/image/upload/v1402145869/transcend-ssd_s3jofp.jpg'  alt="SSD box" /></p>
+
+<p>The box also included a 3.5" hard disk bay should you want to install the SSD on a standard desktop instead of a laptop.</p>
+
+<p><strong>Step 2: Taking out the old hard disk</strong></p>
+
+<p>I was apprehensive about this part but it proved to be very easy. After removing the battery as a precautionary measure, all I had to do was unscrew the portion of the laptop back cover housing the HDD, and then unscrew the internal 2.5" enclosure that the HDD was mounted on. If you're a bit unsure, see <a href='http://www.youtube.com/watch?v=kiDzZuXxV1k' >this excellent video</a>. All you need for this step is a Phillips screwdriver. (If you don't have one, I highly recommend the Chinese <a href='http://www.ebay.in/itm/New-Original-Jackly-31-In-1-Magnetic-Tool-Screw-Driver-Kit-Lowest-Price-Ever-/230827863435' >Jackly</a> screwdriver set that you can find online for about 150 rupees - it has a magnetic handle, and almost all types of shanks that you'll ever need - and is of surprisingly good quality).</p>
+
+<p>Here is the view of the laptop with the HDD removed:</p>
+
+<p><img src='http://res.cloudinary.com/rajorshi/image/upload/v1402145856/laptop-hdd2_qybgby.jpg'  alt="HDD removed" /></p>
+
+<p>And here is the 2.5" enclosure removed from the HDD:</p>
+
+<p><img src='http://res.cloudinary.com/rajorshi/image/upload/v1402145859/laptop-enclosure-25_qisw4k.jpg'  alt="Laptop enclosure" /></p>
+
+<p><strong>Step 3: Inserting the SSD</strong></p>
+
+<p>Again, as easy as screwing the enclosure on to the SSD (all screw positions are apparently standard - yay!), and mounting the laptop onto the hard drive bay:</p>
+
+<p><img src='http://res.cloudinary.com/rajorshi/image/upload/v1402145854/laptop-ssd_wt350d.jpg'  alt="Inserted SSD" /></p>
+
+<p>&nbsp;</p>
+
+<p><strong>Step 4: That's it!</strong></p>
+
+<p>And you're done! Start up your PC and install Windows or whichever OS you prefer. Note: personally I always recommend performing a fresh install - but should you have a lot of data / programs and are unwilling to reinstall everything from scratch, most SSD manufacturers include a utility to clone your existing HDD onto the SSD - but this step needs to be done <em>before</em> the swap.</p>
+
+<p>Here are the stats post the setup, on a clean Windows 7 install:</p>
+
+<p><img src='http://res.cloudinary.com/rajorshi/image/upload/v1402145871/ssd-performance_izcztr.jpg'  alt="SSD performance" /></p>
+
+<p>The Windows 7 experience index shows a whopping 7.8 out of 7.9 in the disk data transfer rate index !</p>
+
+<p><img src='http://res.cloudinary.com/rajorshi/image/upload/v1402145866/win7-performance_thqgnc.jpg'  alt="Win7 performance" /></p>
+
+<p><strong>Step 5: Bonus - use the old HDD as a portable HDD</strong></p>
+
+<p>For this, you need a 2.5" SATA to USB external hard disk enclosure. I bought an el-cheapo one from a brand named <a href='http://www.ebay.in/itm/PORTABLE-EXTERNAL-2-5-INCH-USB-TO-SATA-HDD-HARD-DISK-DRIVE-CASE-CASING-ENCLOSURE-/261455228186?pt=IN_Memory_Cards_Pen_Drives_HDD&amp;hash=item3cdff22d1a&amp;_uhb=1' >Ranz </a>which works perfectly. This also comes with a small screwdriver, and a USB cable. You need to insert the HDD into the SATA connector, and the whole thing into the casing:</p>
+
+<p><img src='http://res.cloudinary.com/rajorshi/image/upload/v1402145864/ext-hdd_swycx2.jpg'  alt="External HDD" /></p>
+
+<ul>
+<li>and voila, you have a "free" portable hard disk that works perfectly as a regular USB drive!</li>
+</ul>
+
+<p>That's all for now. SSD prices are at an all time low now - you can get a pretty decent upgrade for your laptop or desktop for about 4-5000 INR. My Windows 7 SP1 boot time reduced from around a minute to about <span style="text-decoration: underline;"><strong>15-16 seconds</strong></span> (to desktop) :-)</p>
+
+<p>Happy upgrading!</p>]]></description><link>http://rajorshi.net/transcend-128gb-ssd-laptop-upgrade/</link><guid isPermaLink="false">bad324f8-73d3-47ea-8ad8-744c9dbfd74e</guid><dc:creator><![CDATA[Rajorshi Biswas]]></dc:creator><pubDate>Mon, 05 May 2014 17:53:22 GMT</pubDate></item><item><title><![CDATA[Hello world - Raspberry Pi!]]></title><description><![CDATA[<p>After a long (long) hiatus, I'm back at blogging!</p>
+
+<p>This post is a quick note on the geekiest gift one has ever received - the <a href='http://www.raspberrypi.org/' >Raspberry Pi</a> complete kit (thanks to my friends who really know me)!</p>
+
+<p>The <a href='https://www.crazypi.com/raspberry-pi-products/Raspberry-Pi-Starter-Kits/Raspberry-pi-complete-kit' >complete kit</a> came with all the basic necessities required to boot up the Pi, assuming you have a monitor with HDMI input.  This included the following:  </p>
+
+<ul>  
+    <li>The Raspberry Pi model B (512MB RAM) SOC</li>
+    <li>8GB SD card with Raspbian and other distros ready to boot</li>
+    <li>5V power adapter and USB cable</li>
+    <li>HDMI, Cat5 and GPIO cables</li>
+    <li>The very sweet MultiComp <a href='https://www.modmypi.com/multicomp-raspberry-pi-case-clear' >clear case</a></li>
+</ul>  
+
+<p>The very first realization I had was that this "compete" kit did not include an HDMI to VGA adapter. Oh well, VGA monitors are obsolete anyways. However, I have an old Samsung 15" CRT that I desperately wanted to use for this. I'm eyeing <a href='https://www.crazypi.com/RASPBERRY-PI-HDMI-TO-VGA' >this cable</a> (note: el-cheapo HDMI to VGA converters apparently do NOT work), but I set up the Pi with my Toshiba 32" LCD television instead.</p>
+
+<p>On the bright side, my existing <a href='http://www.amkette.com/product.jsp?id=131' >Amkette Cruizer</a> wireless keyboard and mouse combo worked flawlessly with the Pi - a pleasant surprise indeed. This is what the Pi looked after the initial setup:</p>
+
+<p><img src='http://res.cloudinary.com/rajorshi/image/upload/v1402145873/rpi_case_bfhwcx.jpg'  alt="Raspberry Pi Case" /></p>
+
+<p>And finally, here's the Raspbian desktop:</p>
+
+<p><img src='http://res.cloudinary.com/rajorshi/image/upload/v1402145876/rpi_tv_wbjrtn.jpg'  alt="Raspberry Pi on TV" /></p>
+
+<p>I need to modify the resolution or settings since the windows expand beyond the television size, but that's for another hack session with the Pi :-)</p>]]></description><link>http://rajorshi.net/hello-world/</link><guid isPermaLink="false">9a1eca61-478c-4242-a19e-5bace4276e8c</guid><dc:creator><![CDATA[Rajorshi Biswas]]></dc:creator><pubDate>Sat, 15 Mar 2014 14:54:39 GMT</pubDate></item></channel></rss>
