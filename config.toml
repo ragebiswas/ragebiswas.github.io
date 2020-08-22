@@ -1,10 +1,12 @@
 #baseURL = "http://www.rajorshi.net"
-title = "Bits & Bytes"
+title = "Through The Stacks"
 theme = "ananke"
 publishDir = "docs"
+disqusShortname: ragebiswas
+
 
 [params]
-  description = "The last theme you'll ever need. Maybe."
+  description = "Rajorshi's Blog"
   twitter = "https://twitter.com/rajorshi_biswas"
   github = "https://github.com/ragebiswas"
   linkedin = "https://www.linkedin.com/in/rajorshibiswas/"
