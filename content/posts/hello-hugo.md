@@ -8,7 +8,7 @@ draft: true
 
 So I've been meaning to revive my blog in a while, and instead of trying to bring up the old version (based on [Ghost](https://www.ghost.org)), I've decided to give [Hugo](https://gohugo.io) a shot since static site generators are so well suited for occasional bloggers such as me, who post once in a decade or so.
 
-This post is meant to try out basic formatting of the Ananke theme.
+This post is meant to try out basic formatting of the [Ananke](https://github.com/theNewDynamic/gohugo-theme-ananke) theme.
 
 # Markdown
 
@@ -52,6 +52,7 @@ System.out.println("Hello Hugo")
 
 Apart from text, we might need basic support for inline images. Here's a try at one:
 
+![Hugo Logo](/images/hugo-logo.svg)
 
 # Commenting System
 

@@ -3,26 +3,30 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/posts/hello-hugo/</loc>
+    <loc>https://rajorshi.net/posts/hello-hugo/</loc>
     <lastmod>2020-08-22T16:44:13+05:30</lastmod>
   </url>
   
   <url>
-    <loc>/posts/</loc>
+    <loc>https://rajorshi.net/posts/</loc>
     <lastmod>2020-08-22T16:44:13+05:30</lastmod>
   </url>
   
   <url>
-    <loc>/</loc>
+    <loc>https://rajorshi.net/</loc>
     <lastmod>2020-08-22T16:44:13+05:30</lastmod>
   </url>
   
   <url>
-    <loc>/categories/</loc>
+    <loc>https://rajorshi.net/about/</loc>
   </url>
   
   <url>
-    <loc>/tags/</loc>
+    <loc>https://rajorshi.net/categories/</loc>
+  </url>
+  
+  <url>
+    <loc>https://rajorshi.net/tags/</loc>
   </url>
   
 </urlset>

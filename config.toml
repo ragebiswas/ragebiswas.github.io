@@ -1,9 +1,10 @@
-#baseURL = "http://www.rajorshi.net"
+baseURL = "https://rajorshi.net"
 title = "Through The Stacks"
 theme = "ananke"
 publishDir = "docs"
 disqusShortname = "ragebiswas"
-
+DefaultContentLanguage = "en"
+SectionPagesMenu = "main"
 
 [params]
   description = "Rajorshi's Blog"

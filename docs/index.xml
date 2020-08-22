@@ -2,23 +2,32 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Through The Stacks</title>
-    <link>/</link>
+    <link>https://rajorshi.net/</link>
     <description>Recent content on Through The Stacks</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Sat, 22 Aug 2020 16:44:13 +0530</lastBuildDate>
     
-	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://rajorshi.net/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Hello Hugo</title>
-      <link>/posts/hello-hugo/</link>
+      <link>https://rajorshi.net/posts/hello-hugo/</link>
       <pubDate>Sat, 22 Aug 2020 16:44:13 +0530</pubDate>
       
-      <guid>/posts/hello-hugo/</guid>
+      <guid>https://rajorshi.net/posts/hello-hugo/</guid>
       <description>Hello So I&amp;rsquo;ve been meaning to revive my blog in a while, and instead of trying to bring up the old version (based on Ghost), I&amp;rsquo;ve decided to give Hugo a shot since static site generators are so well suited for occasional bloggers such as me, who post once in a decade or so.
 This post is meant to try out basic formatting of the Ananke theme.
 Markdown As a programmer, Markdown is what I prefer for blog posts and it&amp;rsquo;s delightful that Hugo supports this out of the box and is fairly optimized for this.</description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>https://rajorshi.net/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://rajorshi.net/about/</guid>
+      <description>Welcome Hi, my name is Rajorshi Biswas and I am a software developer with around 16 years of experience. My areas of interest are primarily infrastructure and a bit of full-stack engineering.</description>
     </item>
     
   </channel>
