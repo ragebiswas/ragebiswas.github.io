@@ -2,7 +2,7 @@
 title = "Through The Stacks"
 theme = "ananke"
 publishDir = "docs"
-disqusShortname: ragebiswas
+disqusShortname = ragebiswas
 
 
 [params]
